@@ -1,0 +1,43 @@
+/** 팀 소개 영역 css 시작  */
+.tmp_box0 {
+  float: left;
+  border: 1px solid white;
+  width: 96.5%;
+  height: 800px;
+  text-align: center;
+}
+.teamName {
+  font-size: 100px;
+  width: 100%;
+  position: relative;
+  top: 200px;
+  text-align: center;
+}
+.intor_tmp {
+  display: inline-block;
+  margin: 50px 100px 10px 100px;
+}
+.intro_tmp_box {
+  float: left;
+  position: relative;
+  top: 300px;
+  height: 96px;
+}
+.intro_tmp_box p {
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  font-size: 28px;
+  width: 240px;
+  text-align: center;
+}
+.intro_tmp_box ul {
+  list-style: none;
+  padding-left: 0px;
+}
+.intro_tmp_box li {
+  background-color: #006aff;
+  text-align: center;
+  font-size: 25px;
+}
+/** 팀 소개 영역 css 끝  */

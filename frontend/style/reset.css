@@ -1,0 +1,19 @@
+* {
+  background-color: black;
+  color: #f3ecec;
+}
+.header {
+  border: 1px solid white;
+  height: 40px;
+}
+/* .wrap{
+    width: 80px;
+    border-color: solid 1px white;
+} */
+/* 왼쪽 아이콘 css */
+.tmp_box1 {
+  float: left;
+  border: 1px solid white;
+  width: 3.5%;
+  height: 800px;
+}
