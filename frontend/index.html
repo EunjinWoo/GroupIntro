@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>팀 소개 페이지</title>
+    <script src="https://kit.fontawesome.com/8f926c7f74.js" crossorigin="anonymous"></script>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <style>
+        * {
+            background-color: black;
+            color: #F3ECEC;
+        }
+        .header {
+            border: 1px solid white;
+            height: 40px;
+        }
+        /* .wrap{
+            width: 80px;
+            border-color: solid 1px white;
+        } */
+        /* 왼쪽 아이콘 css */
+        .tmp_box1 {
+            float: left;
+            border: 1px solid white;
+            width: 3.5%;
+            height: 800px;
+        }
+        /* 팀원소개 영역 css 시작*/
+        .tmp_box2 {
+            float: left;
+            border: 1px solid white;
+            width: 12%;
+            height: 800px;
+        }
+        .tmp_box3 {
+            float: left;
+            border: 1px solid white;
+            width: 84%;
+            height: 800px;
+        }
+        .content1 {
+            border: 1px solid white;
+            width: 100%;
+            height: 450px;
+        }
+        .content2 {
+            border: 1px solid white;
+            width: 100%;
+            height: 350px;
+        }
+        #icon1 {
+            padding: 10px 10px 10px 10px;
+            width: 100px;
+            height: 50px;
+        }
+        #icon1:hover {
+            background-color: #006AFF;
+            cursor: pointer;
+        }
+        #icon2 {
+            padding: 10px 10px 10px 11px;
+            width: 100px;
+            height: 50px;
+        }
+        #icon2:hover {
+            background-color: #006AFF;
+            cursor: pointer;
+        }
+        .codePlace {
+            float: left;
+            width: 55%;
+            font-size: 20px;
+            padding-top: 80px;
+            padding-left: 80px;
+        }
+        .imgPlace {
+            width: 35%;
+            float: left;
+        }
+        .image {
+            height: 360px;
+            padding-top: 80px;
+            padding-left: 100px;
+        }
+        .list-group-item {
+            color: white;
+            background-color: black;
+            border-bottom: 1px solid gray;
+        }
+        .list-name {
+            list-style: none;
+            padding: 15px;
+        }
+        .list-name-item {
+            width: 150px;
+            height: 60px;
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+            border: 1px solid gray;
+        }
+        .list-name-item:hover {
+            background-color: tomato;
+            color: black;
+        }
+         /* 팀원소개 영역 css 끝*/
+        /** 팀 소개 영역 css 시작  */
+        .tmp_box0 {
+            float: left;
+            border: 1px solid white;
+            width: 96.5%;
+            height: 800px;
+            text-align: center;
+        }
+        .teamName {
+            font-size: 100px;
+            width: 100%;
+            position: relative;
+            top: 200px;
+            text-align: center;
+        }
+        .intor_tmp{
+            display: inline-block;
+            margin: 50px 100px 10px 100px;
+        }
+        .intro_tmp_box {
+            float: left;
+            position: relative;
+            top: 300px;
+            height: 96px;
+        }
+        .intro_tmp_box p {
+            background-color: white;
+            color: black;
+            font-weight: bold;
+            font-size: 28px;
+            width: 240px;
+            text-align: center;
+        }
+        .intro_tmp_box ul {
+            list-style: none;
+            padding-left: 0px;
+        }
+        .intro_tmp_box li {
+            background-color: #006AFF;
+            text-align: center;
+            font-size: 25px;
+        }
+        /** 팀 소개 영역 css 끝  */
+    </style>
+    <script>
+        $(document).ready(function () {
+            showTitle();
+        });
+        function showTitle() {
+            $('#caseMemcard').display = "none";
+            $('#caseIntro').display = "block";
+            $("#icon1:active").css("background-color", "006aff")
+        }
+        function showMember() {
+            $('#caseIntro').display = "none";
+            $('#caseMemcard').display = "block";
+            $("#icon2:active").css("background-color", "006aff")
+        }
+        $('.list-name li').on('click', function (e) {
+            if ($(this).parent('.list-name').length > 0) {
+                console.log("상위 li");
+            } else {
+                console.log($(this).text());
+            }
+        })
+    </script>
+</head>
+<body>
+    <!--제일 상단 부분-->
+    <div class="header"></div>
+    <!--왼쪽 아이콘-->
+    <div class="tmp_box1">
+        <div id="icon1" onclick="showTitle()">
+            <svg xmlns="http://www.w3.org/2000/svg" height="2em"
+                viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <style>
+                    svg {
+                        fill: #F3ECEC
+                    }
+                </style>
+                <path
+                    d="M168 80c-13.3 0-24 10.7-24 24V408c0 8.4-1.4 16.5-4.1 24H440c13.3 0 24-10.7 24-24V104c0-13.3-10.7-24-24-24H168zM72 480c-39.8 0-72-32.2-72-72V112C0 98.7 10.7 88 24 88s24 10.7 24 24V408c0 13.3 10.7 24 24 24s24-10.7 24-24V104c0-39.8 32.2-72 72-72H440c39.8 0 72 32.2 72 72V408c0 39.8-32.2 72-72 72H72zM176 136c0-13.3 10.7-24 24-24h96c13.3 0 24 10.7 24 24v80c0 13.3-10.7 24-24 24H200c-13.3 0-24-10.7-24-24V136zm200-24h32c13.3 0 24 10.7 24 24s-10.7 24-24 24H376c-13.3 0-24-10.7-24-24s10.7-24 24-24zm0 80h32c13.3 0 24 10.7 24 24s-10.7 24-24 24H376c-13.3 0-24-10.7-24-24s10.7-24 24-24zM200 272H408c13.3 0 24 10.7 24 24s-10.7 24-24 24H200c-13.3 0-24-10.7-24-24s10.7-24 24-24zm0 80H408c13.3 0 24 10.7 24 24s-10.7 24-24 24H200c-13.3 0-24-10.7-24-24s10.7-24 24-24z" />
+            </svg>
+        </div>
+        <div id="icon2" onclick="showMember()">
+            <svg xmlns="http://www.w3.org/2000/svg" height="2em"
+                viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <style>
+                    svg {
+                        fill: #F3ECEC
+                    }
+                </style>
+                <path
+                    d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464H398.7c-8.9-63.3-63.3-112-129-112H178.3c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3z" />
+            </svg>
+        </div>
+    </div>
+    <!--------------------팀 소개 페이지 영역 시작-------------------->
+    <div id="caseIntro" style="display: none;">
+        <div class="tmp_box0" style="width: 96.5%;">
+            <div class="teamName">team "김우신"</div>
+            <div class="intor_tmp">
+                <div class="intro_tmp_box">
+                    <p>기술스택</p>
+                    <ul>
+                        <li>컴퓨터공학</li>
+                        <li>Vanilla.js</li>
+                        <li>React.js</li>
+                        <li>java</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="intor_tmp">
+                <div class="intro_tmp_box">
+                    <p>팀원</p>
+                    <ul>
+                        <li>김현우</li>
+                        <li>우은진</li>
+                        <li>신나라</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="intor_tmp">
+                <div class="intro_tmp_box">
+                    <p>역할</p>
+                    <ul>
+                        <li>front: 신나라</li>
+                        <li>back : 김현우, 우은진</li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+            </div>
+        </div>
+    </div>
+    <!--------------------팀 소개 페이지 영역 끝-------------------->
+    <!--------------------팀원 소개 페이지 영역 시작-------------------->
+    <div id="caseMemcard" style="display: block;">
+        <!--폴더위치 부분(이름넣는부분)-->
+        <div class="tmp_box2">
+            <ul class="list-name">
+                <li class="list-name-item">김현우</a></li>
+                <li class="list-name-item">우은진</a></li>
+                <li class="list-name-item">신나라</a></li>
+            </ul>
+        </div>
+        <!--content-->
+        <div class="tmp_box3">
+            <div class="content1">
+                <!--mbti, 자기소개, 등등 부분-->
+                <div class="codePlace">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">MBTI : </li>
+                        <li class="list-group-item">간단소개 : </li>
+                        <li class="list-group-item">기술스택 : </li>
+                        <li class="list-group-item">TMI : </li>
+                        <li class="list-group-item">블로그 url : </li>
+                        <li class="list-group-item">깃허브 url : </li>
+                    </ul>
+                </div>
+                <!--img 넣는 부분-->
+                <div class="imgPlace">
+                    <img class="image"
+                        src="https://mblogthumb-phinf.pstatic.net/MjAyMDExMDFfMTgy/MDAxNjA0MjI4ODc1NDMw.Ex906Mv9nnPEZGCh4SREknadZvzMO8LyDzGOHMKPdwAg.ZAmE6pU5lhEdeOUsPdxg8-gOuZrq_ipJ5VhqaViubI4g.JPEG.gambasg/%EC%9C%A0%ED%8A%9C%EB%B8%8C_%EA%B8%B0%EB%B3%B8%ED%94%84%EB%A1%9C%ED%95%84_%ED%95%98%EB%8A%98%EC%83%89.jpg?type=w800"
+                        alt="">
+                </div>
+            </div>
+            <!-- 터미널 부분(input부분)-->
+            <div class="content2">
+                <div class="terminal">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------------------팀원 소개 페이지 영역 끝-------------------->
+</body>
+</html>
