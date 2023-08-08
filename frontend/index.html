@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,15 +14,26 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
 
-        <!-- css -->
-        <link href="/frontend/style/reset.css" rel="stylesheet" />
-        <link href="/frontend/style/team.css" rel="stylesheet" />
-        <link href="/frontend/style/users.css" rel="stylesheet" />
+    <!-- css -->
+    <link href="/frontend/style/reset.css" rel="stylesheet" />
+    <link href="/frontend/style/team.css" rel="stylesheet" />
+    <link href="/frontend/style/users.css" rel="stylesheet" />
 
 </head>
+
 <body>
     <!--제일 상단 부분-->
-    <div class="header"></div>
+    <div class="header">
+        <div class="TabInfo">
+            <svg width="30" height="20" viewBox="0 0 30 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M30 10L23 17L21.59 15.59L27.17 10L21.59 4.41L23 3L30 10ZM0 10L7 3L8.41 4.41L2.83 10L8.41 15.59L7 17L0 10ZM11.42 19.484L16.64 0L18.572 0.517L13.352 20L11.42 19.484Z"
+                    fill="#128DFF" />
+            </svg>
+            <p>팀 소개</p>
+            <p style="display: none;">멤버 소개</p>
+        </div>
+    </div>
     <!--왼쪽 아이콘-->
     <div class="tmp_box1">
         <div id="icon1" onclick="showTitle()">
@@ -50,36 +62,39 @@
         </div>
     </div>
     <!--------------------팀 소개 페이지 영역 시작-------------------->
-    <div id="caseIntro" style="display: none;">
+    <div id="caseIntro">
         <div class="tmp_box0" style="width: 96.5%;">
-            <div class="teamName">team "김우신"</div>
-            <div class="intor_tmp">
+            <div class="teamName">
+                team_김우신
+                <p>AI웹개발트랙 6조</p>
+            </div>
+            <div class="intro_tmp">
                 <div class="intro_tmp_box">
                     <p>기술스택</p>
                     <ul>
-                        <li>컴퓨터공학</li>
-                        <li>Vanilla.js</li>
-                        <li>React.js</li>
-                        <li>java</li>
+                        <li>∙ 컴퓨터공학</li>
+                        <li>∙ Vanilla.js</li>
+                        <li>∙ React.js</li>
+                        <li>∙ java</li>
                     </ul>
                 </div>
             </div>
-            <div class="intor_tmp">
+            <div class="intro_tmp">
                 <div class="intro_tmp_box">
                     <p>팀원</p>
                     <ul>
-                        <li>김현우</li>
-                        <li>우은진</li>
-                        <li>신나라</li>
+                        <li>∙ 김현우</li>
+                        <li>∙ 우은진</li>
+                        <li>∙ 신나라</li>
                     </ul>
                 </div>
             </div>
-            <div class="intor_tmp">
+            <div class="intro_tmp">
                 <div class="intro_tmp_box">
                     <p>역할</p>
                     <ul>
-                        <li>front: 신나라</li>
-                        <li>back : 김현우, 우은진</li>
+                        <li>∙ front: 신나라</li>
+                        <li>∙ back : 김현우, 우은진</li>
                     </ul>
                 </div>
             </div>
@@ -131,4 +146,5 @@
     <!-- 스크립트 -->
     <script src="/frontend/js/app.js"></script>
 </body>
+
 </html>
