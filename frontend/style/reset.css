@@ -2,10 +2,12 @@
   background-color: black;
   color: #f3ecec;
 }
+
 .header {
   border: 1px solid #818181;
   height: 40px;
 }
+
 .TabInfo {
   position: relative;
   width: 220px;
@@ -16,17 +18,20 @@
   border-left: 2px solid #818181;
   border-right: 2px solid #818181;
 }
+
 .TabInfo svg {
   position: relative;
   top: 8px;
   left: 10px;
 }
+
 .TabInfo p {
   position: relative;
   top: 6px;
   left: 20px;
   color: #cccccc;
 }
+
 /* .wrap{
     width: 80px;
     border-color: solid 1px white;

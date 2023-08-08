@@ -6,6 +6,7 @@
   height: 800px;
   left: 200px;
 }
+
 .teamName {
   font-size: 60px;
   width: 50%;
@@ -30,6 +31,7 @@
   display: inline-block;
   margin: 50px 320px 10px 100px;
 }
+
 .intro_tmp_box {
   float: left;
   position: relative;
@@ -37,6 +39,7 @@
   left: 100px;
   height: 96px;
 }
+
 .intro_tmp_box p {
   color: #cccccc;
   text-shadow: -0.5px 0px #888887, 0px 0.5px #888887, 0.5px 0px #888887,
@@ -44,10 +47,12 @@
   font-size: 28px;
   text-align: left;
 }
+
 .intro_tmp_box ul {
   list-style: none;
   padding-left: 0px;
 }
+
 .intro_tmp_box li {
   color: #40a4fe;
   text-shadow: -0.5px 0px #336ea1, 0px 0.5px #336ea1, 0.5px 0px #336ea1,
@@ -56,4 +61,5 @@
   text-align: left;
   font-size: 20px;
 }
+
 /** 팀 소개 영역 css 끝  */
