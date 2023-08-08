@@ -30,6 +30,7 @@ function listCliked(e) {
 
   
   const ty1 = $(e).attr('id'); //클릭한 행 아이디값 가져오기
+  console.log('ddd : '+ty1);
   const text = document.getElementById(ty1).querySelector('span').innerText//텍스트 가져오기
   const ty2 = ty1.replace('li',''); //li제거해서 숫자만 
   var type = "";
