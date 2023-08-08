@@ -6,22 +6,24 @@
   height: 800px;
   left: 200px;
 }
-.teamName{
+.teamName {
   font-size: 60px;
   width: 50%;
   position: relative;
   left: 200px;
   top: 120px;
   text-align: left;
-  color : #CCCCCC;
-  text-shadow: -0.8px 0px #888887, 0px 0.8px #888887, 0.8px 0px #888887, 0px -0.8px #888887;
+  color: #cccccc;
+  text-shadow: -0.8px 0px #888887, 0px 0.8px #888887, 0.8px 0px #888887,
+    0px -0.8px #888887;
 }
 
-.teamName p{
+.teamName p {
   font-size: 30px;
   position: relative;
-  color : #8B959E;
-  text-shadow: -0.8px 0px #51565A, 0px 0.8px #51565A, 0.8px 0px #51565A, 0px -0.8px #51565A;
+  color: #8b959e;
+  text-shadow: -0.8px 0px #51565a, 0px 0.8px #51565a, 0.8px 0px #51565a,
+    0px -0.8px #51565a;
 }
 
 .intro_tmp {
@@ -36,8 +38,9 @@
   height: 96px;
 }
 .intro_tmp_box p {
-  color: #CCCCCC;
-  text-shadow: -0.5px 0px #888887, 0px 0.5px #888887, 0.5px 0px #888887, 0px -0.5px #888887;
+  color: #cccccc;
+  text-shadow: -0.5px 0px #888887, 0px 0.5px #888887, 0.5px 0px #888887,
+    0px -0.5px #888887;
   font-size: 28px;
   text-align: left;
 }
@@ -46,8 +49,9 @@
   padding-left: 0px;
 }
 .intro_tmp_box li {
-  color : #40A4FE;
-  text-shadow: -0.5px 0px #336EA1, 0px 0.5px #336EA1, 0.5px 0px #336EA1, 0px -0.5px #336EA1;
+  color: #40a4fe;
+  text-shadow: -0.5px 0px #336ea1, 0px 0.5px #336ea1, 0.5px 0px #336ea1,
+    0px -0.5px #336ea1;
   list-style: none;
   text-align: left;
   font-size: 20px;
