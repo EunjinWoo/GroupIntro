@@ -1,17 +1,23 @@
-const users = document.querySelectorAll(".user-list_item li");
+let userView = document.querySelectorAll(".main-contents_info");
+let users = document.querySelectorAll(".user-list_item li");
 
-const userView = document.querySelectorAll(".main-contents_info");
+let userCnt;
 
-const userCnt = users.length;
+function updateUserCnt() {
+  users = document.querySelectorAll(".user-list_item li");
+
+  userCnt = users.length;
+}
+console.log("curUser.js > 현재 유저 카운트: ", userCnt);
 
 let curUser = users[0];
 curUser.classList.add("curActiveUser");
 
 let curView = userView[0];
-console.log(curView);
 curView.classList.add("curViewUser");
 
 const getCurUser = (e) => {
+  updateUserCnt();
   for (let i = 0; i < userCnt; i++) {
     if (e.target === users[i]) {
       curUser.classList.remove("curActiveUser");
