@@ -1,6 +1,6 @@
-$(document).ready(function () {
-  showTitle();
-});
+// $(document).ready(function () {
+//   showTitle();
+// });
 function showTitle() {
   $("#caseMemcard").display = "none";
   $("#caseIntro").display = "block";
