@@ -21,6 +21,8 @@
 
   <!------------ reset css ------------>
   <link href="../../frontend/style/reset.css" rel="stylesheet" />
+  <link href="{{ url_for('static', filename='style/reset.css') }}" rel="stylesheet">
+
 
   <!------------ css ------------>
   <!-- <link href="./style/team.css" rel="stylesheet" /> -->
@@ -28,6 +30,8 @@
   <!-- <link href="./style/nara.css" rel="stylesheet" /> -->
   <link href="../../frontend/style/rayout.css" rel="stylesheet">
   <link href="../../frontend/style/side.css" rel="stylesheet">
+  <link href="{{ url_for('static', filename='style/rayout.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='style/side.css') }}" rel="stylesheet">
 </head>
 
 <body>
@@ -243,7 +247,11 @@
   <script src="../../frontend/js/arrow.js" type="text/javascript"></script>
   <script src="../../frontend/js/terminal.js" type="text/javascript"></script>
   <script src="../../frontend/js/curUser.js" type="text/javascript"></script>
-
+  <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/icon.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/arrow.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/terminal.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/curUser.js') }}"></script>
 
 </body>
 
