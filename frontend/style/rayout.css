@@ -162,10 +162,10 @@
 .user-list_box>div {
     color: #a8a8a8;
     background: #444444;
-    height: 30px;
-    padding: 0 25px;
+    height: 40px;
     display: flex;
     align-items: center;
+    justify-content: space-around;
 }
 
 .user-list_box>div>i {
@@ -174,18 +174,33 @@
     cursor: pointer;
 }
 
+.createUser {
+    font-size: 22px;
+}
+
 .user-list_box ul {
     height: calc(100vh - 90px);
     background: #222222;
 }
 
-.user-list_box ul li {
+/* 새로운 유저 만들기 위한 인풋 */
+.user-list_item input {
+    margin: 0 20px;
+    padding: 10px 5px;
+    width: 87%;
+    border: 1px solid rgb(0, 74, 211);
+    background: rgb(70, 70, 70);
+    color: #fff;
+    font-size: 20px;
+}
+
+.user-name {
     color: #fff;
     padding: 20px;
     cursor: pointer;
 }
 
-.user-list_box ul li:hover {
+.user-name:hover {
     background: rgb(48, 48, 48);
 }
 

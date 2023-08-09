@@ -28,6 +28,7 @@
   <!-- <link href="./style/nara.css" rel="stylesheet" /> -->
   <link href="../../frontend/style/rayout.css" rel="stylesheet">
   <link href="../../frontend/style/side.css" rel="stylesheet">
+  <link href="../../frontend/style/popup.css" rel="stylesheet">
 </head>
 
 <body>
@@ -82,13 +83,29 @@
       <section class="user-container main-section noshow">
         <div class="user-list_box">
           <h4>USERS</h4>
-          <div><i class="fa-solid arrow fa-chevron-down arrow"></i></i>developer</div>
+          <div>
+            <div>
+              <i class="fa-solid arrow fa-chevron-down arrow"></i>
+              <span>developer</span>
+            </div>
+            <i class="fa-regular fa-file-lines createUser"></i>
+          </div>
           <ul class="user-list_item">
-            <li>김현우</li>
-            <li>우은진</li>
-            <li>신나라</li>
+            <li class="user-name">김현우</li>
+            <li class="user-name">우은진</li>
+            <li class="user-name">신나라</li>
           </ul>
         </div>
+
+        <!-- popup -->
+        <div class="popup-container popupDw">
+          <h1>팀원 추가</h1>
+          <p>Password</p>
+          <input type="password" name="" id="">
+          <p class="checkPwText">비밀번호를 확인하세요.</p>
+          <button class="pwBtn">Submit</button>
+        </div>
+
         <div class="main-contents">
           <!-- 유저마다 변경되는 태그 -->
           <div class="main-contents_info">
@@ -143,19 +160,22 @@
                       class="catetoryVal">우</span></li>
                   <li>const <span class="catetorySpan">기술스택</span><span class="equal">=</span><span
                       class="catetoryVal">우</span></li>
-                  <li>const <span class="catetorySpan">TMI</span><span class="equal">=</span><span class="catetoryVal">우</span>
+                  <li>const <span class="catetorySpan">TMI</span><span class="equal">=</span><span
+                      class="catetoryVal">우</span>
                   </li>
-                  <li>const <span class="catetorySpan">블로그</span><span class="equal">=</span><span class="catetoryVal">우</span>
+                  <li>const <span class="catetorySpan">블로그</span><span class="equal">=</span><span
+                      class="catetoryVal">우</span>
                   </li>
-                  <li>const <span class="catetorySpan">깃헙</span><span class="equal">=</span><span class="catetoryVal">우</span>
+                  <li>const <span class="catetorySpan">깃헙</span><span class="equal">=</span><span
+                      class="catetoryVal">우</span>
                   </li>
                   <li>const <span class="catetorySpan">간단소개</span><span class="equal">=</span><span
                       class="catetoryVal">우</span></li>
-          
+
                 </ul>
               </div>
             </div>
-          
+
             <div class="main-section_img">
               <div class="tab-name tab-name003">
                 <div class="tab-name_box">
@@ -183,19 +203,22 @@
                       class="catetoryVal">신</span></li>
                   <li>const <span class="catetorySpan">기술스택</span><span class="equal">=</span><span
                       class="catetoryVal">신</span></li>
-                  <li>const <span class="catetorySpan">TMI</span><span class="equal">=</span><span class="catetoryVal">신</span>
+                  <li>const <span class="catetorySpan">TMI</span><span class="equal">=</span><span
+                      class="catetoryVal">신</span>
                   </li>
-                  <li>const <span class="catetorySpan">블로그</span><span class="equal">=</span><span class="catetoryVal">신</span>
+                  <li>const <span class="catetorySpan">블로그</span><span class="equal">=</span><span
+                      class="catetoryVal">신</span>
                   </li>
-                  <li>const <span class="catetorySpan">깃헙</span><span class="equal">=</span><span class="catetoryVal">신</span>
+                  <li>const <span class="catetorySpan">깃헙</span><span class="equal">=</span><span
+                      class="catetoryVal">신</span>
                   </li>
                   <li>const <span class="catetorySpan">간단소개</span><span class="equal">=</span><span
                       class="catetoryVal">신</span></li>
-          
+
                 </ul>
               </div>
             </div>
-          
+
             <div class="main-section_img">
               <div class="tab-name tab-name003">
                 <div class="tab-name_box">
@@ -210,7 +233,7 @@
               </div>
             </div>
           </div>
-          
+
           <!-- 유저마다 변경되는 태그 -->
 
           <div class="terminal-container">
@@ -242,8 +265,8 @@
   <script src="../../frontend/js/icon.js" type="text/javascript"></script>
   <script src="../../frontend/js/arrow.js" type="text/javascript"></script>
   <script src="../../frontend/js/terminal.js" type="text/javascript"></script>
-  <script src="../../frontend/js/curUser.js" type="text/javascript"></script>
-
+  <script type="module" src="../../frontend/js/curUser.js" type="text/javascript"></script>
+  <script type="module" src="../../frontend/js/checkAdmin.js" type="text/javascript"></script>
 
 </body>
 

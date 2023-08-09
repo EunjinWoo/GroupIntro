@@ -6,7 +6,7 @@ const icon2 = document.querySelectorAll(".icon")[1];
 const teamSectionContainer = document.querySelector(".team-container");
 const userSectionContainer = document.querySelector(".user-container");
 
-const testFn = (e) => {
+const toggleView = (e) => {
   if (e.target === icon1) {
     icon1.classList.add("activeIcon");
     icon2.classList.remove("activeIcon");
@@ -23,5 +23,5 @@ const testFn = (e) => {
 };
 
 // 이벤트
-icon1.addEventListener("click", testFn);
-icon2.addEventListener("click", testFn);
+icon1.addEventListener("click", toggleView);
+icon2.addEventListener("click", toggleView);

@@ -1,0 +1,60 @@
+.popup-container {
+    position: fixed;
+    top: 50px;
+    left: 400px;
+    width: 300px;
+    height: 200px;
+    background: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    padding: 30px;
+}
+
+.popup-container.popupDw {
+    display: none;
+}
+
+.popup-container h1 {
+    font-size: 20px;
+    margin: 0 auto 25px;
+}
+
+.popup-container p {
+    font-size: 14px;
+}
+
+.popup-container input {
+    border: 1px solid rgb(218, 218, 218);
+    width: 100%;
+    height: 30px;
+}
+
+.checkPwText {
+    visibility: hidden;
+}
+
+.checkPwTextOn {
+    visibility: visible;
+    color: rgb(194, 15, 15);
+    width: 100%;
+    height: 50px;
+    display: inline-block;
+    margin: 5px 0;
+}
+
+.pwBtn {
+    width: 100%;
+    line-height: 35px;
+    text-align: center;
+    background: #3d608b;
+    color: #fff;
+    cursor: pointer;
+    padding-top: 5px;
+}
+
+.pwBtn:hover {
+    background: #002858;
+}
