@@ -1,0 +1,306 @@
+/* 전체 레이아웃을 위한 css */
+.wrap {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.side-wrap {
+    width: 80px;
+    height: 100%;
+    background: #333333;
+}
+
+.main-wrap {
+    width: calc(100% - 80px);
+    height: 100%;
+    background: #1E1E1E;
+}
+
+/* 섹션 공통 */
+.main-section {
+    width: calc(100vw -80px);
+}
+
+.main-section_defail {
+    padding: 150px 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.team-main_first h1 {
+    color: #ececec;
+    font-size: 100px;
+}
+
+.team-main_first h4 {
+    color: #8A8386;
+    font-size: 50px;
+    margin-bottom: 150px;
+}
+
+.team-main_sec {
+    display: flex;
+    justify-content: space-between;
+}
+
+.team-main_sec ul h3 {
+    color: #8A8386;
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.team-main_sec ul li {
+    font-size: 20px;
+    color: #3B73B7;
+}
+
+.tab-name {
+    background: #333333;
+    height: 44px;
+}
+
+.tab-name001 {
+    width: calc(100vw - 80px);
+
+}
+
+.tab-name002 {
+    width: 800px;
+    height: 44px;
+}
+
+.tab-name003 {
+    width: calc(100vw - 1200px);
+}
+
+.user-container>.tab-name>div {
+    background: #333333;
+}
+
+.tab-name_box {
+    width: 200px;
+    background: #1E1E1E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.tab-name i {
+    margin-right: 13px;
+}
+
+.teamIcon {
+    color: rgb(211, 97, 3);
+}
+
+.userImgIcon {
+    color: rgb(218, 214, 0);
+}
+
+.imgIcon {
+    color: rgb(200, 104, 255);
+}
+
+.tab-name p {
+    color: #fff;
+    font-weight: bold;
+}
+
+.main-contents_details {
+    padding: 80px;
+}
+
+.main-contents_details ul {
+    height: 100%;
+}
+
+.main-contents_details ul li {
+    color: blueviolet;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 40px;
+}
+
+.main-contents_details ul li .catetorySpan {
+    color: #5981b3;
+    margin-right: 5px;
+}
+
+.main-contents_details ul li .equal {
+    color: #8A8386;
+    margin-right: 5px;
+}
+
+/* 팀 섹션 */
+.team-container {
+    background: #1E1E1E;
+}
+
+/* 유저 섹션 */
+.user-container {
+    display: flex;
+    background: #1E1E1E;
+}
+
+.user-list_box {
+    width: 320px;
+    /* height: 100vh; */
+    background: #252525;
+}
+
+.user-list_box h4 {
+    height: 50px;
+    color: #acacac;
+    line-height: 50px;
+    padding-left: 50px;
+}
+
+.user-list_box>div {
+    color: #a8a8a8;
+    background: #444444;
+    height: 30px;
+    padding: 0 25px;
+    display: flex;
+    align-items: center;
+}
+
+.user-list_box>div>i {
+    margin-right: 8px;
+    margin-top: 3px;
+    cursor: pointer;
+}
+
+.user-list_box ul {
+    height: calc(100vh - 90px);
+    background: #222222;
+}
+
+.user-list_box ul li {
+    color: #fff;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.user-list_box ul li:hover {
+    background: rgb(48, 48, 48);
+}
+
+.noshow {
+    display: none;
+}
+
+.main-contents {
+    width: calc(100vw - 400px);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.main-contents_info {
+    display: none;
+
+}
+
+.main-contents_info.curViewUser {
+    display: flex;
+    flex-direction: row;
+    width: calc(100vw - 400px);
+    height: calc(100vh - 300px);
+    /* background: rgb(48, 48, 48); */
+}
+
+.curActiveUser {
+    background: rgb(48, 48, 48);
+}
+
+
+
+.main-section_img {
+    border-left: 2px double rgb(75, 75, 75);
+    width: calc(100vw -1200px);
+}
+
+.terminal-container {
+    border-top: 1px solid rgb(75, 75, 75);
+    width: 100%;
+    height: 300px;
+    padding: 5px 20px;
+}
+
+.terminal-container ul {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.terminal-container ul li {
+    width: 102px;
+    padding: 10px 20px;
+    color: #8b8b8b;
+    cursor: pointer;
+    text-align: center;
+}
+
+.terminal-container .curCategory {
+    border-bottom: 2px solid #fff;
+}
+
+.terminal-container ul li:hover {
+    color: #fff;
+}
+
+.terminal-container div {
+    background: #3d608b;
+    display: inline-block;
+    padding-left: 10px;
+    font-size: 20px;
+}
+
+.terminal-container div>span {
+    padding: 0 10px;
+    margin-left: 10px;
+    font-weight: bold;
+    background: rgb(185, 185, 59);
+}
+
+.terminal-container input {
+    display: inline-block;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+form {
+    display: inline-block;
+}
+
+.category {
+    width: 80px;
+    text-align: center;
+}
+
+.categoryInfo {
+    border-left: 1px solid #fff;
+    min-width: 500px;
+}
+
+.categoryInfo:focus {
+    border: none;
+}
+
+.img-continaer {
+    height: calc(100vh - 344px);
+    display: flex;
+    margin: auto;
+}
+
+.img-continaer img {
+    width: 100%;
+    max-width: 300px;
+    max-height: 300px;
+    margin: auto;
+    display: block;
+}
