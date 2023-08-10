@@ -1,6 +1,6 @@
 // 아이콘
-const icon1 = document.querySelectorAll(".icon")[0];
-const icon2 = document.querySelectorAll(".icon")[1];
+const icon1 = document.querySelectorAll(".icon")[1];
+const icon2 = document.querySelectorAll(".icon")[0];
 
 // 센션
 const teamSectionContainer = document.querySelector(".team-container");
