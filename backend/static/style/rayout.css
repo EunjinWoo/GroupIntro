@@ -4,7 +4,8 @@
     height: 100vh;
     display: flex;
     flex-direction: row;
-
+    min-width: 100vw;
+    min-height: 100vh;
 }
 
 .side-wrap {
@@ -87,6 +88,7 @@
     justify-content: center;
     align-items: center;
     padding: 10px;
+    min-height: 50px;
 }
 
 .tab-name i {
@@ -184,6 +186,10 @@
 }
 
 /* 새로운 유저 만들기 위한 인풋 */
+.user-list_item {
+    overflow-y: auto;
+}
+
 .user-list_item input {
     margin: 0 20px;
     padding: 10px 5px;
@@ -200,6 +206,10 @@
     cursor: pointer;
 }
 
+.current-active-name {
+    background: rgb(48, 48, 48);
+}
+
 .user-name:hover {
     background: rgb(48, 48, 48);
 }
@@ -208,93 +218,24 @@
     display: none;
 }
 
+.main-section_img {
+    border-left: 2px solid rgb(78, 78, 78);
+}
+
 .main-contents {
-    width: calc(100vw - 400px);
-    height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
 
 .main-contents_info {
-    display: none;
-
+  display: flex;
+  width: 100%;
+  height: calc(100vh - 300px);
 }
-
-.main-contents_info.curViewUser {
-    display: flex;
-    flex-direction: row;
-    width: calc(100vw - 400px);
-    height: calc(100vh - 300px);
-    /* background: rgb(48, 48, 48); */
-}
-
-.curActiveUser {
-    background: rgb(48, 48, 48);
-}
-
-
-
-.main-section_img {
-    border-left: 2px double rgb(75, 75, 75);
-    width: calc(100vw -1200px);
-}
-
-.terminal-container {
-    border-top: 1px solid rgb(75, 75, 75);
-    width: 100%;
-    height: 300px;
-    padding: 5px 20px;
-}
-
-.terminal-container ul {
-    display: flex;
-    margin-bottom: 10px;
-}
-
-.terminal-container ul li {
-    width: 102px;
-    padding: 10px 20px;
-    color: #8b8b8b;
-    cursor: pointer;
-    text-align: center;
-}
-
-.terminal-container .curCategory {
-    border-bottom: 2px solid #fff;
-}
-
-.terminal-container ul li:hover {
-    color: #fff;
-}
-
-.terminal-container div {
-    background: #3d608b;
-    display: inline-block;
-    padding-left: 10px;
-    font-size: 20px;
-}
-
-.terminal-container div>span {
-    padding: 0 10px;
-    margin-left: 10px;
-    font-weight: bold;
-    background: rgb(185, 185, 59);
-}
-
-.terminal-container input {
-    display: inline-block;
-    color: #ffffff;
-    font-size: 20px;
-}
-
-form {
-    display: inline-block;
-}
-
 .category {
     width: 80px;
     text-align: center;
+    color: #fff;
 }
 
 .categoryInfo {
