@@ -6,11 +6,13 @@ client = MongoClient(
     'mongodb+srv://sparta:test@cluster0.svk42ds.mongodb.net/?retryWrites=true&w=majority')
 db = client.dbsparta
 
+
 @app.route('/')
 def home():
     return render_template('index.html')
 
 # 유저 생성 post 요청
+
 
 @app.route('/member', methods=['POST'])
 def user_post():
@@ -53,12 +55,14 @@ def user_modify():
     name_receive = request.form['name_give']
     att_category_receive = request.form['att_category_give']
     att_to_receive = request.form['att_to_give']
-    if (att_category_receive == 'stack'): # stack인 경우엔 배열로 저장
+    if (att_category_receive == 'stack'):  # stack인 경우엔 배열로 저장
         att_to_receive = request.form['att_to_give']
-        att_to_receive = att_to_receive.split(',') # 클라이언트에서 배열을 전달 받으면 ','로 구분된 문자열 상태로 들어옴.
-    else: # 그 외의 경우엔 문자열로 저장
+        # 클라이언트에서 배열을 전달 받으면 ','로 구분된 문자열 상태로 들어옴.
+        att_to_receive = att_to_receive.split(',')
+    else:  # 그 외의 경우엔 문자열로 저장
         att_to_receive = request.form['att_to_give']
-    db.member.update_one({'name':name_receive},{'$set':{ att_category_receive : att_to_receive }})
+    db.member.update_one({'name': name_receive}, {
+                         '$set': {att_category_receive: att_to_receive}})
     return jsonify({'msg': '수정 완료!'})
 
 
