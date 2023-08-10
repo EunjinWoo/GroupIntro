@@ -40,21 +40,17 @@ const closePopup = (e) => {
 // 패스워드 유효성 검사
 const checkPw = () => {
   let pwVal = pwInput.value;
-  console.log(pwVal);
   if (pwVal === ADMIN_PASSWORD) {
-    console.log("비밀번호 일치");
     pwInput.value = null;
     popup.classList.add("popupDw");
     createNewuser();
   } else {
-    console.log("비밀번호 불일치");
     checkText.classList.add("checkPwTextOn");
   }
 };
 
 // 새로운 유저 생성
 const createNewuser = () => {
-  console.log("유효성 통과 새로운 유저 만들 수 있음");
   checkText.classList.remove("checkPwTextOn");
   let newUserInput = document.createElement("input");
   userListBox.appendChild(newUserInput);
@@ -62,12 +58,24 @@ const createNewuser = () => {
 
   newUserInput.addEventListener("keypress", (e) => {
     if (e.key === "Enter") {
-      console.log("여기까지 실행되고 값은: ", newUserInput.value);
       let newUserLi = document.createElement("li");
       newUserLi.classList.add("user-name");
-      newUserLi.innerText = newUserInput.value;
+
+      const userName = newUserInput.value;
+
+      newUserLi.innerText = userName;
       userListBox.append(newUserLi);
+
+      let formData = new FormData();
+      formData.append("name_give", userName);
+
+      fetch("/member", { method: "POST", body: formData })
+        .then((res) => res.json())
+        .then((data) => {
+          console.log("포스트 요청한 데이터: ", data);
+        });
       newUserInput.remove();
+      location.reload();
     }
   });
 };
