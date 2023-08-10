@@ -4,8 +4,9 @@
     height: 100vh;
     display: flex;
     flex-direction: row;
-    min-width: 100vw;
+    min-width: 1800px;
     min-height: 100vh;
+
 }
 
 .side-wrap {
@@ -18,11 +19,13 @@
     width: calc(100% - 80px);
     height: 100%;
     background: #1E1E1E;
+
 }
 
 /* 섹션 공통 */
 .main-section {
     width: calc(100vw -80px);
+
 }
 
 .main-section_defail {
@@ -49,12 +52,12 @@
 
 .team-main_sec ul h3 {
     color: #8A8386;
-    font-size: 35px;
+    font-size: 40px;
     margin-bottom: 15px;
 }
 
 .team-main_sec ul li {
-    font-size: 20px;
+    font-size: 24px;
     color: #3B73B7;
 }
 
@@ -121,10 +124,9 @@
 }
 
 .main-contents_details ul li {
-    color: blueviolet;
     font-size: 20px;
-    font-weight: bold;
     line-height: 40px;
+    color: #5981b3
 }
 
 .main-contents_details ul li .catetorySpan {
@@ -215,7 +217,7 @@
     cursor: pointer;
 }
 
-.current-active-name {
+.user-name.currentLi {
     background: rgb(48, 48, 48);
 }
 
@@ -264,8 +266,8 @@
 
 .img-continaer img {
     width: 100%;
-    max-width: 300px;
-    max-height: 300px;
+    max-width: 400px;
+    max-height: 400px;
     margin: auto;
     display: block;
 }

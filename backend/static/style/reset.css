@@ -13,6 +13,10 @@
   display: revert;
 }
 
+* {
+  font-family: 'Courier New', monospace;
+}
+
 /* Preferred box-sizing value */
 *,
 *::before,

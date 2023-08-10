@@ -25,3 +25,7 @@ const toggleView = (e) => {
 // 이벤트
 icon1.addEventListener("click", toggleView);
 icon2.addEventListener("click", toggleView);
+
+document.querySelector(".settingIcon").addEventListener("click", () => {
+  alert("아무것도아님");
+});

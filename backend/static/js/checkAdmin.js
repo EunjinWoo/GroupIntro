@@ -45,6 +45,7 @@ const checkPw = () => {
     popup.classList.add("popupDw");
     createNewuser();
   } else {
+    pwInput.value = null;
     checkText.classList.add("checkPwTextOn");
   }
 };

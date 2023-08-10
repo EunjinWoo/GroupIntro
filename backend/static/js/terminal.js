@@ -6,9 +6,9 @@ const len = categoryList.length;
 categoryInput.value = categoryList[0].innerText;
 categoryList[0].classList.add("curCategory");
 
-const getCategory = (e) => {
-  let curInputVal = document.querySelector(".categoryInfo");
+let curInputVal = document.querySelector(".categoryInfo");
 
+const getCategory = (e) => {
   for (let i = 0; i < len; i++) {
     if (e.target === categoryList[i]) {
       categoryInput.value = categoryList[i].innerText;
@@ -31,15 +31,21 @@ const deleteBtn = document.querySelector(".deleteBtn");
 const deleteMember = () => {
   let curSelectMember = document.querySelector(".topTabName").innerText;
 
-  let formData = new FormData();
+  let confirmVal = confirm("모든 데이터를 삭제합니다.");
 
-  formData.append("name_give", curSelectMember);
-  fetch("/member", { method: "DELETE", body: formData })
-    .then((res) => res.json())
-    .then((data) => {
-      console.log(data);
-    });
-  location.reload();
+  if (confirmVal) {
+    let formData = new FormData();
+
+    formData.append("name_give", curSelectMember);
+    fetch("/member", { method: "DELETE", body: formData })
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+      });
+
+    location.reload();
+  } else {
+  }
 };
 
 // 수정
@@ -71,3 +77,8 @@ const updateMember = () => {
 // 삭제 / 수정 이벤트
 deleteBtn.addEventListener("click", deleteMember);
 updateBtn.addEventListener("click", updateMember);
+curInputVal.addEventListener("keydown", (e) => {
+  if (e.keyCode === 13) {
+    updateMember();
+  }
+});
