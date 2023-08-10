@@ -6,13 +6,11 @@ client = MongoClient(
     'mongodb+srv://sparta:test@cluster0.svk42ds.mongodb.net/?retryWrites=true&w=majority')
 db = client.dbsparta
 
-
 @app.route('/')
 def home():
     return render_template('index.html')
 
 # 유저 생성 post 요청
-
 
 @app.route('/member', methods=['POST'])
 def user_post():
@@ -20,13 +18,13 @@ def user_post():
 
     doc = {
         'name': name_receive,
-        'mbti': 'mbtiTest',
-        'stack': ['stackTest'],
-        'tmi': 'tmiTest',
-        'blog': 'blogTest',
-        'github': 'gitTest',
-        'intro': 'introTest',
-        'img': 'imgTest'
+        'mbti': '',
+        'stack': [''],
+        'tmi': '',
+        'blog': '',
+        'github': '',
+        'intro': '',
+        'img': ''
     }
     db.member.insert_one(doc)
     print('post 데이터 저장', doc)

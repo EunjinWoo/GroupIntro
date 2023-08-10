@@ -40,8 +40,16 @@ const printMemberName = () => {
                   mbtiVal.innerText = check.mbti;
                   stackVal.innerText = check.stack;
                   tmiVal.innerText = check.tmi;
-                  blogVal.innerText = check.blog;
-                  githubVal.innerText = check.github;
+                  if (check.blog === "") {
+                    blogVal.innerText = "";
+                  } else {
+                    blogVal.innerHTML = `<a href="https://${check.blog}">블로그 바로가기</a>`;
+                  }
+                  if (check.github === "") {
+                    githubVal.innerText = "";
+                  } else {
+                    githubVal.innerHTML = `<a href="https://${check.github}">깃허브 바로가기</a>`;
+                  }
                   introVal.innerText = check.intro;
                   imgUrlVal.src = check.img;
                 } else if (check.name !== name.innerText) {

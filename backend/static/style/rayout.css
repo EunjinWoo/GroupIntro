@@ -137,10 +137,19 @@
     margin-right: 5px;
 }
 
+.valColor {
+    color: #3B73B7;
+}
+
+.equal {
+    color: #8A8386;
+}
+
 /* 팀 섹션 */
 .team-container {
     background: #1E1E1E;
 }
+
 
 /* 유저 섹션 */
 .user-container {

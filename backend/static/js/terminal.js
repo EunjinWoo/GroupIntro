@@ -7,10 +7,14 @@ categoryInput.value = categoryList[0].innerText;
 categoryList[0].classList.add("curCategory");
 
 const getCategory = (e) => {
+  let curInputVal = document.querySelector(".categoryInfo");
+
   for (let i = 0; i < len; i++) {
     if (e.target === categoryList[i]) {
       categoryInput.value = categoryList[i].innerText;
       categoryList[i].classList.add("curCategory");
+
+      curInputVal.focus();
     } else {
       categoryList[i].classList.remove("curCategory");
     }
